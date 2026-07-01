@@ -12,7 +12,7 @@ echo "========================================="
 echo "2. Memperintahkan Server GitHub untuk Compile..."
 echo "========================================="
 # Menjalankan github action secara remote
-gh workflow run "Android CI Build"
+gh workflow run build.yml
 
 echo "Menunggu server merespon..."
 sleep 10
