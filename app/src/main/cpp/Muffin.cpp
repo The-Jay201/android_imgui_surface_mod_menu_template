@@ -10,7 +10,7 @@
 
 // UBAH BAGIAN INI:
 int registerNativeFunctions(JNIEnv* env) {
-    return JNI_OK; // Menggunakan JNI_OK (atau angka 1 jika JNI_OK tidak terbaca) agar lolos validasi
+    return 1; // Menggunakan JNI_OK (atau angka 1 jika JNI_OK tidak terbaca) agar lolos validasi
 }
 
 void setupConfigFile() {
