@@ -7,9 +7,14 @@
 #include <Hooks.h>
 // Tambahkan 3 baris ini di bagian paling atas file Muffin.cpp
 #include <jni.h>
-int registerNativeFunctions(JNIEnv* env);
-void setupConfigFile();
+int registerNativeFunctions(JNIEnv* env) {
+    // Mengembalikan nilai 0 tanda proses registrasi JNI sukses
+    return 0; 
+}
 
+void setupConfigFile() {
+    // Dikosongkan sementara agar config default bawaan yang berjalan
+}
 //======================================================================================================================
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
 
