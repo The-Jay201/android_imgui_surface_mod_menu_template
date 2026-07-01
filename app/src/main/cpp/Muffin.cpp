@@ -5,6 +5,11 @@
 #include <Globals.h>
 #include <Natives.h>
 #include <Hooks.h>
+// Tambahkan 3 baris ini di bagian paling atas file Muffin.cpp
+#include <jni.h>
+int registerNativeFunctions(JNIEnv* env);
+void setupConfigFile();
+
 //======================================================================================================================
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
 
